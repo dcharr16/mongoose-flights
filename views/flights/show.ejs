@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Flight Details</title>
+  </head>
+  <body>
+    <section>
+      <div>Flight Details </div>
+      <div><%= flight.airline %>
+        <a href="/flights/<%= flight._id %>/edit">
+          <button>Edit Flight</button>
+        </a>
+        <div>Airport</div>
+        <div><%= flight.airport %></div>
+        <div>Flight #</div>
+        <div><%= flight.flightNo %></div>
+      </section>      
+</body>
+</html>

@@ -25,6 +25,10 @@ const ticketSchema = new Schema({
 })
 const Flight = mongoose.model("Flight", flightSchema)
 
+const mealSchema =  new Schema({
+  name: {type: String,}
+})
+
 export{ 
   Flight
 }
